@@ -1,0 +1,26 @@
+{
+  "name": "@augurproject/templates",
+  "version": "2.1.13",
+  "description": "ABI and Contract Address Artifacts",
+  "author": "Augur Team <team@augur.net>",
+  "license": "MIT",
+  "main": "build",
+  "scripts": {
+    "build": "tsc -b",
+    "prepare": "tsc -b"
+  },
+  "files": [
+    "build/**"
+  ],
+  "dependencies": {
+    "@augurproject/sdk-lite": "^2.1.13",
+    "ethers": "4.0.47",
+    "moment": "2.26.0"
+  },
+  "devDependencies": {
+    "typescript": "3.9.7"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

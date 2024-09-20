@@ -1,0 +1,27 @@
+{
+  "name": "@augurproject/artifacts",
+  "version": "2.1.13",
+  "description": "ABI and Contract Address Artifacts",
+  "author": "Augur Team <team@augur.net>",
+  "license": "MIT",
+  "main": "build",
+  "browser": "./build/browser.js",
+  "scripts": {
+    "build": "tsc -b",
+    "prepare": "tsc -b"
+  },
+  "files": [
+    "build/**"
+  ],
+  "dependencies": {
+    "@augurproject/utils": "^2.1.13",
+    "deepmerge": "4.2.2",
+    "require-all": "3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "3.9.7"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

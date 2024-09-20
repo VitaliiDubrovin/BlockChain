@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "config:base",
+    "group:allNonMajor",
+    ":maintainLockFilesWeekly"
+  ],
+  "prHourlyLimit": 1,
+  "updateNotScheduled": false,
+  "schedule": [
+    "after 6am and before 1pm"
+  ],
+  "timezone": "UTC"
+}

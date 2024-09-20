@@ -1,0 +1,60 @@
+{
+  "extends": "../../tsconfig-base.json",
+  "compilerOptions": {
+    "outDir": "build",
+    "rootDir": "src",
+    "target": "ES2017",
+    "module": "ES2015",
+    "jsx": "react",
+    "noImplicitAny": false,
+    "baseUrl": "src",
+    "paths": {
+      "assets/*": [
+        "./assets/*"
+      ],
+      "config/*": [
+        "./config/*"
+      ],
+      "modules/*": [
+        "./modules/*"
+      ],
+      "reducers/*": [
+        "./reducers/*"
+      ],
+      "services/*": [
+        "./services/*"
+      ],
+      "store/*": [
+        "./store/*"
+      ],
+      "utils/*": [
+        "./utils/*"
+      ]
+    },
+    "typeRoots": [
+      "types",
+      "node_modules/@types"
+    ],
+    "esModuleInterop": false,
+    "resolveJsonModule": false
+  },
+  "include": [
+    "./src/**/*",
+    "../augur-artifacts/src/environments/*.json"
+  ],
+  "exclude": [
+    "./src/**/*.test.ts"
+  ],
+  "references": [
+    {
+      "path": "../augur-sdk"
+    },
+    {
+      "path": "../augur-sdk-lite"
+    },
+    {
+      "path": "../augur-utils"
+    }
+
+  ]
+}

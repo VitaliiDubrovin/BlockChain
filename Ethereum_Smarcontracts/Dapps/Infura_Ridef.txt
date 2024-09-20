@@ -1,0 +1,11 @@
+Hello Alessio!
+Thank you for registering for early access to INFURA, we hope you enjoy our service and build incredible decentralized applications using INFURA as your engine!
+
+To get started, use the following provider URLs in your code (in place of localhost):
+
+Main Ethereum Network               https://mainnet.infura.io/ZwIpa5uHKUa6OCRfOm4q
+Test Ethereum Network (Ropsten)     https://ropsten.infura.io/ZwIpa5uHKUa6OCRfOm4q
+Test Ethereum Network (Rinkeby)     https://rinkeby.infura.io/ZwIpa5uHKUa6OCRfOm4q
+Test Ethereum Network (Kovan)       https://kovan.infura.io/ZwIpa5uHKUa6OCRfOm4q
+IPFS Gateway                        https://ipfs.infura.io
+IPFS RPC                            https://ipfs.infura.io:5001

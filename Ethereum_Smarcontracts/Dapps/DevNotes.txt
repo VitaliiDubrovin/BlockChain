@@ -1,0 +1,38 @@
+DevNotes
+
+
+
+rbMaster :
+
+
+curl -X POST -H "Content-Type: application/json" --data '{"jsonrpc": "2.0", "id": 1, "method": "eth_blockNumber", "params": []}' https://ropsten.infura.io/ZwIpa5uHKUa6OCRfOm4q
+
+
+
+curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":[{see above}],"id":1}'
+
+
+0xf889808609184e72a0008276c094ea5510304ab95d98f0b8f700566c37dcce3418cd80a4a79b1eb800000000000000000000000000000000000000000000000000000000000000ff1ba05c0bf60be6f5caf421b20ba4f7d55777e22ca77d9f0021bd5db496ec426181c6a0016f78e9461ae45518e0af85e17ec03ef87e8cd5ae983c67516888a8ef090d13
+curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":["0xf889...90d13"],"id":1}' https://ropsten.infura.io/ZwIpa5uHKUa6OCRfOm4q
+
+
+
+curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params":["0x0E33CaF70A010039450cFdc5C7D101b50E2cb6E2","latest"],"id":1}' https://ropsten.infura.io/ZwIpa5uHKUa6OCRfOm4q
+
+
+params: [{
+  "from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155",
+  "to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567",
+  "gas": "0x76c0", // 30400
+  "gasPrice": "0x9184e72a000", // 10000000000000
+  "value": "0x9184e72a", // 2441406250
+  "data": "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675"
+}]
+
+
+0xa79b1eb800000000000000000000000000000000000000000000000000000000000000ff
+\_____________METHOD_CALL_=_44BYTES_______/\______UINT256_=_32BYTES______/
+
+
+0x07154b44000000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000e33caf70a010039450cfdc5c7d101b50e2cb6e2
+\_____________METHOD_CALL_=_44BYTES_______/\______UINT256_=_32BYTES______/.........................\_____________TO__ADDRESS_____________/
